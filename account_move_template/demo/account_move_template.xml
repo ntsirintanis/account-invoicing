@@ -1,0 +1,5 @@
+<odoo>
+    <record id="account_move_template_01" model="account.move.template">
+        <field name="name">Demo</field>
+    </record>
+</odoo>
