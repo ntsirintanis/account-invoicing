@@ -1,5 +1,5 @@
 {
-    "name": "Account Move Template",
+    "name": "Account Move Auto",
     "summary": """
        Template for invoicing product lines""",
     "version": "13.0.1.0.0",
@@ -10,8 +10,8 @@
     "depends": ["account"],
     "data": [
         "security/ir.model.access.csv",
-        "views/account_move_template_views.xml",
-        "demo/account_move_template.xml",
+        "views/account_move_auto_views.xml",
+        "demo/account_move_auto.xml",
     ],
     "demo": [],
 }

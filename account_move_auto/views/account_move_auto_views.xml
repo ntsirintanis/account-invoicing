@@ -2,9 +2,9 @@
 <!-- Copyright 2019 ACSONE SA/NV
      License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
 <odoo>
-    <record model="ir.ui.view" id="account_move_template_form_view">
-        <field name="name">account.move.template.form</field>
-        <field name="model">account.move.template</field>
+    <record model="ir.ui.view" id="account_move_auto_form_view">
+        <field name="name">account.move.auto.form</field>
+        <field name="model">account.move.auto</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -20,9 +20,9 @@
             </form>
         </field>
     </record>
-    <record model="ir.ui.view" id="account_move_template_tree_view">
-        <field name="name">account.move.template.tree</field>
-        <field name="model">account.move.template</field>
+    <record model="ir.ui.view" id="account_move_auto_tree_view">
+        <field name="name">account.move.auto.tree</field>
+        <field name="model">account.move.auto</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name" />
@@ -31,16 +31,16 @@
             </tree>
         </field>
     </record>
-    <record model="ir.actions.act_window" id="account_move_template_act_window">
-        <field name="name">Account Move Template</field>
-        <field name="res_model">account.move.template</field>
+    <record model="ir.actions.act_window" id="account_move_auto_act_window">
+        <field name="name">Account Move Auto</field>
+        <field name="res_model">account.move.auto</field>
         <field name="view_mode">tree,form</field>
         <field name="domain">[]</field>
         <field name="context">{}</field>
     </record>
-    <record model="ir.ui.menu" id="account_move_template_menu">
-        <field name="name">Account Move Template</field>
-        <field name="action" ref="account_move_template_act_window" />
+    <record model="ir.ui.menu" id="account_move_auto_menu">
+        <field name="name">Account Move auto</field>
+        <field name="action" ref="account_move_auto_act_window" />
         <field name="sequence" eval="100" />
     </record>
 </odoo>
